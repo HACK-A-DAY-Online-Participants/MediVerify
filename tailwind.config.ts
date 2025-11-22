@@ -93,4 +93,4 @@ export default {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+} satisfies Config; //Complete Animation sorted along with border Radius and keyframes
