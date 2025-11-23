@@ -4,6 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
+//Development server configured to use IPv6 and port 8080 for better accessibility and testing across different network setups.
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
