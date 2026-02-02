@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Database, Users, Shield, Activity } from "lucide-react";
+import MapHeatmap from "@/components/MapHeatmap";
 
 const Admin = () => {
   const adminStats = [
@@ -30,7 +31,7 @@ const Admin = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background p-6">
+    <div className="min-h-screen bg-background p-6 pb-24">
       <div className="max-w-7xl mx-auto">
         <div className="mb-8">
           <h1 className="text-3xl font-bold mb-2">Admin Panel</h1>
@@ -52,6 +53,10 @@ const Admin = () => {
               </Card>
             );
           })}
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 mb-8">
+          <MapHeatmap />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
